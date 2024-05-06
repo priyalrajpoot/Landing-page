@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
 
+
+import "./App.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="container">
+      <nav>
+        <img src="images/explore.jpeg" className="logo" alt="imaged" />
+        <ul>
+          <li>
+            <a href="www.ziontutorial.com">Traval Guide</a>
+          </li>
+          <li>
+            <a href="www.ziontutorial.com">Famous Places</a>
+          </li>
+          <li>
+            <a href="www.ziontutorial.com">Contact Us</a>
+          </li>
+        </ul>
+        <button className="btn">
+          <img src="images/aerplane.png" alt="icon" /> Bookings
+        </button>
+      </nav>
+      <div className="content">
+        <h1>
+          Beautiful
+          <br />
+          Places to explore
+        </h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <form>
+          <input type="text" placeholder="Country Name" />
+          <button type="submit" className="btn">
+            Search
+          </button>
+        </form>
+      </div>
+      <p></p>
     </div>
   );
 }
-
+ 
 export default App;
